@@ -1,3 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Используем��е��иа-запросы для адаптации к разным размерам экрана */
+  
+  /* До 576px (мобильные устройства) */
+  @media screen and (max-width: 576px) {
+    body {
+      font-size: 14px;
+    }
+  
+  .container {
+      padding: 10px;
+    }
+  }
+  
+  /* От 576px до 768px (планшеты) */
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* От 768px до 998px (маленькие ноутбуки) */
+  @media screen and (min-width:768px)and (max-width:998px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .container {
+      padding:30px;
+    }
+  }
+  
+  /* От 998px до 1200px (большие ноутбуки) */
+  @media screen and (min-width: 998px) and (max-width: 1200px) {
+    body {
+      font-size: 20px;
+    }
+  
+    .container {
+      padding: 40px;
+    }
+  }
+  
+  /* Свыше 1200px (настольные компьютеры) */
+  @media screen and (min-width: 1200px) {
+    body {
+      font-size: 22px;
+    }
+  
+    .container {
+      padding: 50px;
+    }
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -61,37 +125,3 @@ a {
     text-decoration: none;
     color: #000;
   }
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .gallery-controls {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .gallery-control {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 50%;
-  } 
